@@ -3,7 +3,7 @@
 
     let fetch_results = document.getElementById("fetch_results");
     let answer =   `<table class="table table-light table-striped border">
-                        <thead class="bg-danger text-white">
+                        <thead class="bg-danger text-white table-bordered">
                             <tr>
                                 <th>SN</th>
                                 <th>NAME</th>
@@ -18,7 +18,7 @@
 
     let n = 1;
 
-  fetch('http://jsonplaceholder.typicode.com/users')
+  fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => response.json())
   .then(data => {
     for(let i = 0; i < data.length; i++){
